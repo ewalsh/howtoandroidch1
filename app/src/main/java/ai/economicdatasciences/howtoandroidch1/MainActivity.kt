@@ -7,6 +7,8 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import com.google.android.material.textfield.TextInputEditText
+// chapter 2
+import android.util.Log
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,5 +33,15 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+        Log.d(TAG, "onCreate")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.d(TAG, "onRestart")
+    }
+
+    companion object {
+        private const val TAG = "MainActivity"
     }
 }
