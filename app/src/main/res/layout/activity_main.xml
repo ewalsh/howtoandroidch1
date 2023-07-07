@@ -34,10 +34,20 @@
         android:text="@string/enter_button_text"
         app:layout_constraintTop_toBottomOf="@id/last_name_wrapper"
         app:layout_constraintStart_toStartOf="parent"/>
-    <TextView
+
+    <!-- <TextView
         android:id="@+id/greeting_display"
         android:layout_width="match_parent"
         style="@style/greeting_display"
         app:layout_constraintTop_toBottomOf="@id/enter_button"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" /> -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
